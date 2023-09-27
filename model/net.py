@@ -25,7 +25,7 @@ class BertMultiLabel(nn.Module):
 
     def __init__(self, labels, device, hidden_size=1024, max_length=512,
                  bert_model_name="bert-large-uncased",
-                 truncation_side="right", mode="train"):
+                 truncation_side="left", mode="train"):
         super(BertMultiLabel, self).__init__()
         self.hidden_size = hidden_size
         self.device = device
