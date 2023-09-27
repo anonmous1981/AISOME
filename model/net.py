@@ -23,8 +23,8 @@ class BertMultiLabel(nn.Module):
 
     """BERT-based model for multi-label classification"""
 
-    def __init__(self, labels, device, hidden_size=768, max_length=512,
-                 bert_model_name="bert-base-uncased",
+    def __init__(self, labels, device, hidden_size=1024, max_length=512,
+                 bert_model_name="bert-large-uncased",
                  truncation_side="right", mode="train"):
         super(BertMultiLabel, self).__init__()
         self.hidden_size = hidden_size
