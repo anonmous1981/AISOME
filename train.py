@@ -209,7 +209,7 @@ def main():
     parser.add_argument("-ul", "--unique_labels", type=str, default=None,
                         help="Labels to use as targets.")
     parser.add_argument("-bm", "--bert_model_name", type=str,
-                        default="bert-base-uncased",
+                        default="bert-large-uncased",
                         help="BERT variant to use as model.")
 
     args = parser.parse_args()
